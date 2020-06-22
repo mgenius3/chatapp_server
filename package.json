@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "global": "^4.4.0",
+    "nodemon": "^2.0.2",
+    "cors":"^2.8.5",
+    "express":"^4.17.1",
+    "socket.io":"^2.3.0"
+  },
+  "name": "ChatApp",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {
+     "nodemon":"^2.0.2"
+  },
+  "scripts": {
+    "start":"node src/server",
+    "dev":"nodemon src/server"
+  },
+  "keywords": [],
+  "author": "Moses Benjamin",
+  "license": "ISC",
+  "description": "A world chat application"
+}
