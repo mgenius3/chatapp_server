@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js run dev
+
+PATH: 
+  C:\Users\osewe\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\osewe\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\Program Files\Microsoft\Web Platform Installer;C:\Users\osewe\AppData\Local\Programs\Python;C:\Users\osewe\AppData\Local\Programs\Python\Python37-32;C:\Program Files\Git\cmd;C:\Program Files (x86)\Brackets\command;C:\Program Files\heroku\bin;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\osewe\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\osewe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\WebStorm 2019.3.2\bin;C:\Users\osewe\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  10.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\osewe\Desktop\WEB PROJECT\NODE\Reference\ChatAppReact\package.json: Unexpected token } in JSON at position 168
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "dependencies": {
+      "global": "^4.4.0",
+      "nodemon": "^2.0.2",
+      "cors":"^2.8.5",
+      "express":"^4.17.1",
+      "socket.io":"^2.3.0",
+      "multer":"^1.4.2",
+    },
+    "name": "ChatApp",
+    "version": "1.0.0",
+    "main": "server.js",
+    "devDependencies": {
+       "nodemon":"^2.0.2"
+    },
+    "scripts": {
+      "start":"node src/server",
+      "dev":"nodemon src/server"
+    },
+    "keywords": [],
+    "author": "Moses Benjamin",
+    "license": "ISC",
+    "description": "A world chat application"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
