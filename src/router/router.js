@@ -7,7 +7,7 @@ const fs = require("fs");
 const upload = require("./multer_storage");
 
 const mongoose= require("mongoose")
-const mongoURI= "mongodb://localhost/CHAT_IMG"
+const mongoURI= "mongodb+srv://mosboy:mosboy24@cluster0-fbyff.mongodb.net/CHAT_IMG?retryWrites=true&w=majority"
 const Grid=require("gridfs-stream");
 const conn = mongoose.createConnection(mongoURI,{
 	useNewUrlParser: true,

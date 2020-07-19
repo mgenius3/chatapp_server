@@ -6,7 +6,7 @@ const multer = require("multer");
 const GridFsStorage = require("multer-gridfs-storage");
 const Grid = require("gridfs-stream");
 
-const mongoURI = "mongodb://localhost/CHAT_IMG";
+const mongoURI = "mongodb+srv://mosboy:mosboy24@cluster0-fbyff.mongodb.net/CHAT_IMG?retryWrites=true&w=majority";
 const conn = mongoose.createConnection(mongoURI, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
@@ -23,7 +23,7 @@ conn.once("open", () => {
 //creating storage engine
 const storage = new GridFsStorage({
 	//note: new GridFsStorage is creating it's own db connection instance
-	url: "mongodb://localhost/CHAT_IMG",
+	url: "mongodb+srv://mosboy:mosboy24@cluster0-fbyff.mongodb.net/CHAT_IMG?retryWrites=true&w=majority",
 	options: { useUnifiedTopology: true, useNewUrlParser: true },
 	file: (req, file) => {
 		const { name, room } = req.body;
